@@ -1,10 +1,292 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js" lang="en">
+
 <head>
-    <title>Welcome to My GitHub Page</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
+
 <body>
-    <h1>Hello, World!</h1>
-    <p>Welcome to my GitHub Page.</p>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <!-- End #mobile-menu-toggle -->
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+        </ul>
+    </header>
+    <!-- End header -->
+
+    <div id="lead">
+        <div id="lead-content">
+            <h1>Hayden Berberich</h1>
+            <h2>Software Engineer</h2>
+            <a href="resume.pdf" class="btn-rounded-white">
+                <i class="fa fa-file-text" aria-hidden="true"></i> View Resume
+            </a>
+            <div class="icon-buttons">
+                <a href="mailto:haydenberberich@gmail.com" class="icon-button">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                </a>
+                <a href="https://github.com/HaydenBerberich" class="icon-button" target="_blank">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                </a>
+                <a href="https://linkedin.com/in/HaydenBerberich" class="icon-button" target="_blank">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+        <!-- End #lead-content -->
+
+        <div id="lead-overlay"></div>
+
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+        </div>
+        <!-- End #lead-down -->
+    </div>
+    <!-- End #lead -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="heading">About Me</h2>
+                </div>
+                <div class="col-md-8">
+                    <p class="spaced-paragraph">
+                        I am a Computer Science graduate from the University of Missouri-St. Louis with a deep passion for technology and innovation. Throughout my academic journey, I developed a strong foundation in programming, algorithms, and software development. I also hold a certification in Artificial Intelligence, where I focused on machine learning, data science, and AI-driven solutions.
+                    </p>
+                    <p class="spaced-paragraph">
+                        With a strong analytical mindset and problem-solving skills, I am driven to apply my knowledge and skills in real-world projects that push the boundaries of technology. I’m enthusiastic about staying up-to-date with the latest industry trends and continuously learning and improving.
+                    </p>
+                    <p class="spaced-paragraph">
+                        I am looking forward to collaborating with like-minded professionals and contributing to projects that drive technological advancement.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End #about -->
+
+    <div id="experience" class="background-alt">
+        <h2 class="heading">Experience</h2>
+        <div id="experience-timeline">
+            <div data-date="July 2024 – Present">
+                <h3>Technical Support Engineer</h3>
+                <h4>Joe’s Records</h4>
+                <p>
+                    • Diagnosed and resolved hardware, software, and network issues, ensuring minimal downtime and maximum productivity.<br>
+                    • Developed scripts and small-scale programs to automate repetitive tasks and enhance system functionality, improving efficiency and accuracy.<br>
+                    • Collaborated with other software engineers to develop and maintain a website, contributing to the implementation of key features that resulted in increased sales.
+                </p>
+            </div>
+
+            <div data-date="June 2024 – Present">
+                <h3>Computer Science Tutor</h3>
+                <h4>Self-Employed</h4>
+                <p>
+                    • Provided one-on-one tutoring in Computer Science with a focus on JavaScript, fostering a deep understanding of programming concepts.<br>
+                    • Cultivated a learning environment that encouraged questions and clarified complex concepts effectively.<br>
+                    • Helped the student achieve improved grades, course completion, and greater understanding of programming concepts.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- End #experience -->
+
+    <div id="education">
+        <h2 class="heading">Education</h2>
+        <div class="education-block">
+            <h3>University of Missouri–St. Louis</h3>
+            <span class="education-date">Aug. 2021 - Dec. 2024</span>
+            <h4>Bachelor of Science in Computer Science, Certificate in Artificial Intelligence</h4>
+            <p>
+                • Pierre Laclede Honors College Dean’s List<br>
+                • GPA: 3.734
+            </p>
+        </div>
+        <!-- End .education-block -->
+    </div>
+    <!-- End #education -->
+
+    <div id="projects" class="background-alt">
+        <h2 class="heading">Projects</h2>
+        <div class="container">
+            <div class="row">
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/compiler.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Original Language Compiler</h3>
+                        <p>
+                            Developed a compiler for an original programming language, featuring a scanner, parse tree, static semantics checker, and code generation to convert high-level code into executable machine code.
+                        </p>
+                        <a href="https://github.com/HaydenBerberich/originalLanguageCompiler">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+    
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/os.webp" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Operating System Simulator</h3>
+                        <p>
+                            Created an operating system simulator enabling process scheduling, resource management, and memory allocation, employing operating system principles and functionalities.
+                        </p>
+                        <a href="https://github.com/HaydenBerberich/operatingSystemSimulator">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+    
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/chess.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Chess Natural Language Processor</h3>
+                        <p>
+                            Developed a model to analyze and explain chess positions, translating board configurations into human-readable descriptions and providing strategic insights.
+                        </p>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+    
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/ml.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Machine Learning Models</h3>
+                        <p>
+                            Implemented various machine learning models, including Neural Networks, Support Vector Machines, Logistic Regression, Linear Regression, Simulated Annealing, and Perceptron Learning Algorithm, to solve classification and regression problems.
+                        </p>
+                        <a href="https://github.com/HaydenBerberich?tab=repositories">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+    
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/dm.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Data Mining Models</h3>
+                        <p>
+                            Applied data mining techniques such as BIRCH, SPADE, Support Vector Machines, and Decision Trees to analyze and extract meaningful patterns from large datasets, and created visualizations to effectively communicate insights and trends.
+                        </p>
+                        <a href="https://github.com/HaydenBerberich?tab=repositories">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+    
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/bloodborne.jpeg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Full Stack Web Page</h3>
+                        <p>
+                            Developed a dynamic webpage that enabled users to create and save accounts, securely store account information, and featured visual effects for enhanced user experience.
+                        </p>
+                        <a href="https://github.com/HaydenBerberich/bloodborneWebPage">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+    
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/cv.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Computer Vision</h3>
+                        <p>
+                            Utilized OpenCV to implement a variety of image processing techniques, including Huffman image compression, interactive histogram equalization, lomographic filtering, histogram enhancement, image resampling, and building an image corpus and browser.
+                        </p>
+                        <a href="https://github.com/HaydenBerberich?tab=repositories">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+            </div>
+        </div>
+    </div>
+    <!-- End #projects -->
+
+    <div id="skills">
+        <h2 class="heading">Skills</h2>
+        <ul>
+            <li>Languages: C++, C, Python, Java, HTML, CSS, JavaScript, PHP, SQL, R, Racket, Prolog</li>
+            <li>Tools: Git, GitHub, Jupyter Notebook, Linux, Windows, Microsoft Office Suite, Google Workspace, GIMP</li>
+            <li>Soft Skills: Problem-Solving, Teamwork, Adaptability, Time Management, Communication, Critical Thinking</li>
+        </ul>
+    </div>
+    <!-- End #skills -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; <span id="current-year">2025</span> Hayden Berberich
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
+
 </html>
