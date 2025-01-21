@@ -75,7 +75,7 @@
     </div>
     <!-- End #lead -->
 
-    <div id="about">
+    <div id="about" class="fade-in">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -97,7 +97,7 @@
     </div>
     <!-- End #about -->
 
-    <div id="experience" class="background-alt">
+    <div id="experience" class="background-alt fade-in">
         <h2 class="heading">Experience</h2>
         <div id="experience-timeline">
             <div data-date="July 2024 – Present">
@@ -123,7 +123,7 @@
     </div>
     <!-- End #experience -->
 
-    <div id="education">
+    <div id="education" class="fade-in">
         <h2 class="heading">Education</h2>
         <div class="education-block">
             <h3>University of Missouri–St. Louis</h3>
@@ -138,7 +138,7 @@
     </div>
     <!-- End #education -->
 
-    <div id="projects" class="background-alt">
+    <div id="projects" class="background-alt fade-in">
         <h2 class="heading">Projects</h2>
         <div class="container">
             <div class="row">
@@ -257,7 +257,7 @@
     </div>
     <!-- End #projects -->
 
-    <div id="skills">
+    <div id="skills" class="fade-in">
         <h2 class="heading">Skills</h2>
         <ul>
             <li>Languages: C++, C, Python, Java, HTML, CSS, JavaScript, PHP, SQL, R, Racket, Prolog</li>
@@ -287,6 +287,24 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const elements = document.querySelectorAll('.fade-in');
+
+            function checkVisibility() {
+                const windowHeight = window.innerHeight;
+                elements.forEach(element => {
+                    const rect = element.getBoundingClientRect();
+                    if (rect.top < windowHeight - 150) { // Increase threshold value
+                        element.classList.add('visible');
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', checkVisibility);
+            checkVisibility(); // Initial check on page load
+        });
+    </script>
 </body>
 
 </html>

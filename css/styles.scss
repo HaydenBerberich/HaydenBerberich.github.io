@@ -365,6 +365,19 @@ footer {
     --------------------------
 */
 
+/* Initial hidden state */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out 0.5s, transform 1s ease-out 0.5s; /* Increase duration and add delay */
+}
+
+/* Visible state */
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 #lead {
     position: relative;
     height: 100vh;
